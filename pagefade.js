@@ -1,18 +1,13 @@
 $(function() {
-	var fadeInTime = 600; //fading time in ms.
-	$('body').fadeIn(fadeInTime);
-	
-	
-	$('.link[href]').click(function() {
-		var fadeOutTime = 600; //fading time in ms.
-		var loadDelay = 1200; //redirecting trigger. time in ms.
-		var url = this.href; //checking the href attribut in your html.
+	$( '.container' ).css( 'display', 'none' );
+	$( '.container' ).fadeIn( 600 );
+	$( 'a[href]' ).click(function() {	
+		var url = this.href;
 		
-		$('body').fadeOut(fadeOutTime);		
-
+		$( 'body' ).fadeOut( 600 );		
 		setTimeout(function() {
 			location.href = url;
-		}, loadDelay);
+		}, 1200 );
 		return false;
 	});
 });
