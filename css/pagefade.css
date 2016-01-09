@@ -11,13 +11,8 @@ body {
 }
 
 section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: calc(100vh - 20px);
-	text-align: center;
-	color: #483D8B;
-	border: solid 10px #483D8B;
+	display: block;
+	padding: 10%;
 }
 
 h1 {

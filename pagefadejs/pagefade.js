@@ -1,13 +1,15 @@
-$(function() {
-	$( '.container' ).css( 'display', 'none' );
-	$( '.container' ).fadeIn( 600 );
-	$( 'a[href]' ).click(function() {	
+$(window).on( 'load', function () {
+	setTimeout( function () {
+		$( '.pagefade' ).fadeIn( 600 );
+	}, 600 );
+
+	$( 'a[href]' ).click( function () {	
 		var url = this.href;
 		
 		$( 'body' ).fadeOut( 600 );		
-		setTimeout(function() {
+		setTimeout( function () {
 			location.href = url;
-		}, 1200 );
+		}, 600 );
 		return false;
 	});
 });
