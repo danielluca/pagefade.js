@@ -1,2 +1,2 @@
 # pagefade.js
-a simple jQuery plugin for fading between pages
+A simple jQuery plugin for fading between pages
